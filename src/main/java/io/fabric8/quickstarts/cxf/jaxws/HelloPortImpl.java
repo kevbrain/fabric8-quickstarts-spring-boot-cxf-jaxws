@@ -30,7 +30,7 @@ public class HelloPortImpl implements Hello {
     public String sayHello(java.lang.String myname) {
         LOG.info("Executing operation sayHello" + myname);
         try {
-            return "Hello, Welcome to CXF Spring boot " + myname + "!!!";
+            return "Hello "+ myname + ", you successful communicate with SOAP webService on CXF Spring boot hosted on OpenShift !!!";
         } catch (java.lang.Exception ex) {
             ex.printStackTrace();
             throw new RuntimeException(ex);
